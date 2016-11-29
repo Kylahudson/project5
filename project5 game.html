@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Smiley Face Game</title>
+    <script src="p5.js"></script>
 <style>
     #rightSide{
         position: absolute;
         width:500px;
         height:500px;
-        left:400px;
+        left:600px;
         border-left: 1px solid black;
     }
     #leftSide{
         position: absolute;
         width:500px;
         height:500px;
+        'border-right: 1px solid red;
 
     }
     img{
         position:absolute;
+        width:100px;
+        height:100px;
     }
+    body{
+        background-color: antiquewhite;
+    }
+    h1{
+        color: coral;
+    }
+
 </style>
 
 </head>
-<body>
+<body onload="generateFaces()" >
 <h1>Matching Game</h1>
 <h4>Click on the extra smiley face on the left side</h4>
+<!--<div id="leftSide" onclick="generateFaces()"></div>-->
 <div id="leftSide"></div>
 <div id="rightSide"></div>
 </body>
